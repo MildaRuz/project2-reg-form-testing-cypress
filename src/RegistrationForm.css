@@ -1,0 +1,87 @@
+/* src/RegistrationForm.css */
+.registration-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+.registration-form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  width: calc(100% - 24px); /* Full width minus padding */
+}
+
+.registration-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.registration-form button {
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%; /* Full width button */
+}
+
+.registration-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.error {
+  color: #d9534f;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.submitted-info {
+  margin-top: 30px;
+  font-size: 1em;
+  color: #666;
+}
+
+.registration-form input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.registration-form {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
