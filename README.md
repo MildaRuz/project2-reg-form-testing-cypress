@@ -2,6 +2,8 @@
 
 Welcome to the Vite React Registration Form for Cypress testing project! 
 
+<img width="1032" alt="Screen Shot 2024-06-04 at 15 01 04" src="https://github.com/MildaRuz/project2-reg-form-testing-cypress/assets/145338483/aeb72897-e9ee-437d-b487-2e8069c6e894">
+
 ## 🚀 Getting Started
 
 ### Installation
@@ -37,5 +39,5 @@ npm run cypress:ui
 Run the tests:
 In the Cypress Test Runner, select spec.cy.js to run the form validation tests.
 
-<img width="1432" alt="Screen Shot 2024-06-04 at 15 01 04" src="https://github.com/MildaRuz/project2-reg-form-testing-cypress/assets/145338483/aeb72897-e9ee-437d-b487-2e8069c6e894">
+
 
