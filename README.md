@@ -2,7 +2,7 @@
 
 Welcome to the Vite React Registration Form for Cypress testing project! 
 
-<img width="1032" alt="Screen Shot 2024-06-04 at 15 01 04" src="https://github.com/MildaRuz/project2-reg-form-testing-cypress/assets/145338483/aeb72897-e9ee-437d-b487-2e8069c6e894">
+<img width="832" alt="Screen Shot 2024-06-04 at 15 01 04" src="https://github.com/MildaRuz/project2-reg-form-testing-cypress/assets/145338483/aeb72897-e9ee-437d-b487-2e8069c6e894">
 
 ## 🚀 Getting Started
 
