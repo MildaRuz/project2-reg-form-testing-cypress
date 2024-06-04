@@ -1,8 +1,41 @@
-# React + Vite
+# 🌟 Registration Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Vite React Registration Form for Cypress testing project! 
 
-Currently, two official plugins are available:
+## 🚀 Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Installation
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/MildaRuz/project2-reg-form-testing-cypress.git
+    cd registration-form
+    ```
+
+2. **Install dependencies:**
+    ```sh
+    npm install
+    ```
+
+## 🔧 Running the Application
+
+To start the application locally, use:
+
+```sh
+npm run dev
+```
+
+## 🧪 Running Cypress Tests
+Cypress is used for end-to-end testing of the registration form.
+
+Open the Cypress Test Runner:
+
+```sh
+npm run cypress:ui
+```
+
+Run the tests:
+In the Cypress Test Runner, select spec.cy.js to run the form validation tests.
+
+<img width="1432" alt="Screen Shot 2024-06-04 at 15 01 04" src="https://github.com/MildaRuz/project2-reg-form-testing-cypress/assets/145338483/aeb72897-e9ee-437d-b487-2e8069c6e894">
+
