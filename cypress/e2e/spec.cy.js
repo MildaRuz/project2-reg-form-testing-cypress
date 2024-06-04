@@ -52,6 +52,8 @@ describe('Form functionality testing', () => {
     const password = 'secret';
     const dob = '2000-01-02';
 
+    const expectedAge = '24';
+
     cy.visit('http://localhost:5177');
     cy.get('#username').type(username);
     cy.get('#email').type(email);
@@ -62,20 +64,11 @@ describe('Form functionality testing', () => {
 
     cy.get('.error').should('not.exist');
 
-    // Calculate the expected age
-    const birthDate = new Date(dob);
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-    }
-
     // Verify that the submitted info is visible and contains the correct data
     cy.get('.submitted-info').should('be.visible');
 
     cy.get('.submitted-info p').then((elements) => {
-      const texts = [`Username: ${username}`, `Email: ${email}`, `Date of Birth: ${dob}`, `Age: ${age}`];
+      const texts = [`Username: ${username}`, `Email: ${email}`, `Date of Birth: ${dob}`, `Age: ${expectedAge}`];
 
       texts.forEach((text) => {
         cy.wrap(elements).contains(text);
