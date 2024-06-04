@@ -113,7 +113,7 @@ describe('Form validation for empty or invalid data testing', () => {
     cy.get('#username').type('Jakefake');
     cy.get('#email').type('jfake@bit.lt');
     cy.get('#password').type('123');
-    cy.get('#dob').type('2000-01-02');
+    cy.get('#dob').type('2010-01-02');
 
     cy.contains('button', 'Submit').click();
     cy.get('.error').should('be.visible').and('contain', 'Password must be at least 6 characters');
