@@ -30,8 +30,9 @@ Cypress is used for end-to-end testing of the registration form.
 
 Open the Cypress Test Runner:
 
-sh
+```sh
 npx cypress open
+```
 
 Run the tests:
 In the Cypress Test Runner, select spec.cy.js to run the form validation tests.
