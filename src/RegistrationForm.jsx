@@ -1,4 +1,3 @@
-// src/RegistrationForm.js
 import './RegistrationForm.css';
 
 import React, { useState } from 'react';
@@ -98,9 +97,11 @@ const RegistrationForm = () => {
           <p>
             <strong>Email:</strong> {formData.email}
           </p>
+
           <p>
             <strong>Date of Birth:</strong> {formData.dob}
           </p>
+
           <p>
             <strong>Age:</strong> {age}
           </p>
