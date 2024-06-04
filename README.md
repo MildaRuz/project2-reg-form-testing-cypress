@@ -8,7 +8,7 @@ Welcome to the Vite React Registration Form for Cypress testing project!
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/registration-form.git
+    git clone https://github.com/MildaRuz/project2-reg-form-testing-cypress.git
     cd registration-form
     ```
 
