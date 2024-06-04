@@ -26,10 +26,10 @@ jobs:
     - name: Check Vite server logs
       run: sleep 5 && curl -I http://localhost:5177
 
-    # - name: Wait for Vite to be ready
-    #   run: |
-    #     sleep 10
-    #     npx wait-on http://localhost:5177
+    - name: Wait for Vite to be ready
+      run: |
+        sleep 10
+        npx wait-on http://localhost:5177
 
     - name: Run Cypress tests
       run: npm run cypress:ci
