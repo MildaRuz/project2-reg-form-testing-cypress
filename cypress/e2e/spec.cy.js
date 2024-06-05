@@ -48,18 +48,16 @@ describe('Form display testing', () => {
 describe('Form functionality testing', () => {
   it('User is able to fill the registration form', () => {
     // Define the user input data
-    const username = 'Jakefake';
-    const email = 'jfake@bit.lt';
-    const password = 'secret';
-    const dob = '2000-01-02';
+    const correctUsername = 'Jakefake';
+    const correctEmail = 'jfake@bit.lt';
+    const correctPassword = 'secret';
+    const correctDob = '2000-01-02';
 
     const expectedAge = '24';
 
     cy.visit('http://localhost:5177');
-    cy.get('#username').type(username);
-    cy.get('#email').type(email);
-    cy.get('#password').type(password);
-    cy.get('#dob').type(dob);
+
+    cy.fillAndSubmitForm(correctUsername, correctEmail, correctPassword, correctDob);
 
     cy.contains('button', 'Submit').click();
 
@@ -69,7 +67,12 @@ describe('Form functionality testing', () => {
     cy.get('.submitted-info').should('be.visible');
 
     cy.get('.submitted-info p').then((elements) => {
-      const texts = [`Username: ${username}`, `Email: ${email}`, `Date of Birth: ${dob}`, `Age: ${expectedAge}`];
+      const texts = [
+        `Username: ${correctUsername}`,
+        `Email: ${correctEmail}`,
+        `Date of Birth: ${correctDob}`,
+        `Age: ${expectedAge}`,
+      ];
 
       texts.forEach((text) => {
         cy.wrap(elements).contains(text);
@@ -83,6 +86,11 @@ describe('Form validation for empty or invalid data testing', () => {
     cy.visit('http://localhost:5177');
   });
 
+  const correctUsername = 'Jakefake';
+  const correctEmail = 'jfake@bit.lt';
+  const correctPassword = 'secret';
+  const correctDob = '2000-01-02';
+
   it('Displays validation messages for empty required fields', () => {
     cy.contains('button', 'Submit').click();
     cy.get('.error')
@@ -94,22 +102,16 @@ describe('Form validation for empty or invalid data testing', () => {
   });
 
   it('Displays a validation message for an invalid email', () => {
-    cy.get('#username').type('Jakefake');
-    cy.get('#email').type('invalid@email');
-    cy.get('#password').type('secret');
-    cy.get('#dob').type('2000-01-02');
+    cy.fillAndSubmitForm(correctUsername, 'invalid@email', correctPassword, correctDob);
 
-    cy.contains('button', 'Submit').click();
     cy.get('.error').should('be.visible').and('contain', 'Email is invalid');
   });
 
   it('Displays a validation message for a password that is too short', () => {
-    cy.get('#username').type('Jakefake');
-    cy.get('#email').type('jfake@bit.lt');
-    cy.get('#password').type('123');
-    cy.get('#dob').type('2010-01-02');
+    const shortPassword = '123';
 
-    cy.contains('button', 'Submit').click();
+    cy.fillAndSubmitForm(correctUsername, correctEmail, shortPassword, correctDob);
+
     cy.get('.error').should('be.visible').and('contain', 'Password must be at least 6 characters');
   });
 });
