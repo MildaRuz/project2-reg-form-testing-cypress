@@ -6,9 +6,9 @@ Welcome to the React + Vite Registration Form for Cypress testing project!
 
 ## 🚀 Technologies Used
 
-- React + Vite
-- Cypress
-- Concurrently
+- React + Vite (is used for registration app)
+- Cypress ( is used for end-to-end testing of the registration form.)
+- Concurrently (is used for running multiply scripts in one command)
 
 ## 🚀 Getting Started
 
@@ -29,13 +29,17 @@ Welcome to the React + Vite Registration Form for Cypress testing project!
    npm install
    ```
 
-## 🔧 Running the Application
+## 🔧 Running the Application and 🧪 Cypress Tests
 
 To start the application and cypress tests in one command use:
 
 ```sh
 npm run test
 ```
+
+or you can run the application and cypress in two terminals:
+
+## 🔧 Running the Application
 
 To start the application locally, use:
 
@@ -45,8 +49,6 @@ npm run dev
 
 ## 🧪 Running Cypress Tests
 
-Cypress is used for end-to-end testing of the registration form.
-
 Open the Cypress Test Runner:
 
 ```sh
@@ -55,7 +57,3 @@ npm run cypress:ui
 
 Run the tests:
 In the Cypress Test Runner, select spec.cy.js to run the form validation tests.
-<<<<<<< HEAD
-=======
-
-> > > > > > > b325ac129571960363a7b94c39d8da73c1fc780f
