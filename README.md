@@ -1,6 +1,7 @@
-# 🌟 Registration Form
+# 🌟 Registration Form Cypress Testing Framework
 
-Welcome to the Vite React Registration Form for Cypress testing project!
+Welcome to the React + Vite Registration Form for Cypress testing project!
+
 <img width="732" alt="Screen Shot 2024-06-04 at 15 01 04" src="https://github.com/MildaRuz/project2-reg-form-testing-cypress/assets/145338483/aeb72897-e9ee-437d-b487-2e8069c6e894">
 
 ## 🚀 Technologies Used
@@ -8,6 +9,8 @@ Welcome to the Vite React Registration Form for Cypress testing project!
 - React + Vite
 - Cypress
 - Concurrently
+
+## 🚀 Getting Started
 
 ### Installation
 
