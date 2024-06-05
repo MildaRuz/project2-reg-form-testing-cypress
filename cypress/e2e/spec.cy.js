@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 describe('Form display testing', () => {
   beforeEach(() => {
     cy.visit('http://localhost:5177');

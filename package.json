@@ -9,9 +9,11 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "cypress:ui": "npx cypress open",
-    "cypress:ci": "npx cypress run --browser chrome"
+    "cypress:ci": "npx cypress run --browser chrome",
+    "test": "concurrently \"vite --port 5177\" \"cypress run --browser chrome\""
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
