@@ -37,7 +37,7 @@ To start the application and cypress tests in one command use (tests will be vis
 npm run test:ci
 ```
 
-or you can run the application and open and run tests in Cypress:
+or you can run the application and open tests in Cypress:
 
 ```sh
 npm run test:ui
