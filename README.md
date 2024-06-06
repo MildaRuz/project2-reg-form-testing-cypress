@@ -44,4 +44,4 @@ npm run test:ui
 ```
 
 Run the tests:
-In the Cypress Test Runner, select spec.cy.js to run the form validation tests.
+In the Cypress Test Runner, select spec.cy.js to run the form e2e tests.
