@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "cypress:ui": "npx cypress open",
     "cypress:ci": "npx cypress run --browser chrome",
-    "test": "concurrently \"vite --port 5177\" \"cypress run --browser chrome\""
+    "test:ci": "concurrently \"vite --port 5177\" \"cypress run --browser chrome\"",
+    "test:ui": "concurrently \"vite --port 5177\" \"cypress open --browser chrome\""
   },
   "dependencies": {
     "concurrently": "^8.2.2",
