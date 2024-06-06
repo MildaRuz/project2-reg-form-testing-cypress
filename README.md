@@ -31,28 +31,16 @@ Welcome to the React + Vite Registration Form for Cypress testing project!
 
 ## 🔧 Running the Application and 🧪 Cypress Tests
 
-To start the application and cypress tests in one command use:
+To start the application and cypress tests in one command use (tests will be visible in terminal):
 
 ```sh
-npm run test
+npm run test:ci
 ```
 
-or you can run the application and cypress in two terminals:
-
-## 🔧 Running the Application
-
-To start the application locally, use:
+or you can run the application and open and run tests in Cypress:
 
 ```sh
-npm run dev
-```
-
-## 🧪 Running Cypress Tests
-
-Open the Cypress Test Runner:
-
-```sh
-npm run cypress:ui
+npm run test:ui
 ```
 
 Run the tests:
