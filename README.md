@@ -6,7 +6,7 @@ Welcome to the React + Vite Registration Form for Cypress testing project!
 
 ## 🚀 Technologies Used
 
-- React + Vite (is used for registration app)
+- React + Vite (is used for registration app, do not look at the code quality it was used ChatGPT to generate the code for time saving)
 - Cypress (is used for end-to-end testing of the registration form)
 - Concurrently (is used for running multiply scripts in one command)
 
